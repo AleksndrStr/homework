@@ -83,11 +83,11 @@
 
 
 // Доп.задание4
-let numbers = [66,456,7832,567,9090,1234,2,456,3891,434];
-let min = numbers[0];
-for (let item of numbers) {
-if(item < min) {
-    minimum = item;
-    }
-}
-console.log(minimum);
+// let numbers = [66,456,7832,567,9090,1234,2,456,3891,434];
+// let min = numbers[0];
+// for (let item of numbers) {
+// if(item < min) {
+//     minimum = item;
+//     }
+// }
+// console.log(minimum);

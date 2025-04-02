@@ -25,7 +25,7 @@ a {
   background-color: rgb(225, 255, 143);
   background-image: url(images/stars1.png), url(images/stars2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 230% 80%, 4% 10%;
+  background-position: calc(100% - 1px), calc(100% - 1px);
 }
 
 .header {
@@ -214,6 +214,9 @@ a {
 .mini-games__button:hover {
   background-color: white;
   color: rgb(32, 32, 39);
+}
+.mini-games__result {
+  display: none;
 }
 
 .footer {
