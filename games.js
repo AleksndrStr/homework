@@ -85,3 +85,59 @@ function startGame() {
     startGame();
   }
 }
+
+// game3
+document
+  .getElementById("reverse-btn")
+  .addEventListener("click", function playGame() {
+    const text = prompt("Введите текст:");
+    if (text) {
+      const reversedText = text.split("").reverse().join("");
+      alert("Результат: " + reversedText);
+    } else {
+      alert("Вы ничего не напечатали!");
+    }
+    if (confirm("Попробуем еще раз?")) {
+      playGame();
+    }
+  });
+
+// game4
+document
+  .getElementById("quiz-btn")
+  .addEventListener("click", function playGame() {
+    const quiz = [
+      {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2,
+      },
+      {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2,
+      },
+    ];
+
+    let score = 0;
+
+    for (let i = 0; i < quiz.length; i++) {
+      const currentQuestion = quiz[i];
+
+      let questionText = currentQuestion.question + "\n\n";
+      questionText += currentQuestion.options.join("\n");
+
+      const userAnswer = parseInt(prompt(questionText));
+
+      if (userAnswer === currentQuestion.correctAnswer) {
+        score++;
+      }
+    }
+
+    alert(`Ваш результат: ${score} из ${quiz.length} правильных ответов!`);
+  });
