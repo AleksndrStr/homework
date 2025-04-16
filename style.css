@@ -25,7 +25,7 @@ a {
   background-color: rgb(225, 255, 143);
   background-image: url(images/stars1.png), url(images/stars2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(100% - 1px), calc(100% - 1px);
+  background-position: calc(100% + 400px) calc(100% + 10px), calc(100% - 1250px) calc(100% - 500px);
 }
 
 .header {
@@ -165,7 +165,7 @@ a {
 .mini-games__cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 .mini-games__game-card {
   display: flex;
