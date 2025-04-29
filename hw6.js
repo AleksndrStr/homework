@@ -67,11 +67,9 @@
 
 // Задание 10
 // let numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// for (let i = 0; i < numb.length; i++) {
-//   if (numb[i + 1]) {
+// for (let i = 0; i < numb.length - 1; i++) {
 //     console.log(numb[i] + numb[i + 1]);
 //   }
-// }
 
 // Задание 11
 // function square(arr) {
@@ -112,15 +110,15 @@
 // console.log(evenArr);
 
 // Задание 15
-// function rendomNumb() {
-//   return Math.floor(Math.random() * 10);
-// }
-// const arr = [];
+function rendomNumb() {
+  return Math.floor(Math.random() * 10);
+}
+const arr = [];
 
-// for (let i = 0; i < 6; i++) {
-//   arr.push(rendomNumb());
-// }
-// console.log(arr);
+for (let i = 0; i < 6; i++) {
+  arr.push(rendomNumb());
+}
+console.log(arr);
 
-// const sum = arr.reduce((total, arr) => total + arr, 0);
-// console.log(sum / 2);
+const sum = arr.reduce((total, arr) => total + arr, 0);
+console.log(sum / 6);
