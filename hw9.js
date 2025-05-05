@@ -1,63 +1,63 @@
 // Задание1
-// const heading = document.querySelector("#title");
-// const button = document.querySelector("#toggleBtn");
+const heading = document.querySelector("#title");
+const button = document.querySelector("#toggleBtn");
 
-// button.addEventListener("click", function () {
-//   if (heading.style.display === "none") {
-//     heading.style.display = "block";
-//     button.textContent = "Скрыть";
-//   } else {
-//     heading.style.display = "none";
-//     button.textContent = "Показать";
-//   }
-// });
+button.addEventListener("click", function () {
+  if (heading.style.display === "none") {
+    heading.style.display = "block";
+    button.textContent = "Скрыть";
+  } else {
+    heading.style.display = "none";
+    button.textContent = "Показать";
+  }
+});
 
 // Задание2
-// const paragraph = document.querySelector("#myParagraph");
-// const button = document.querySelector("#colorBtn");
+const paragraph = document.querySelector("#myParagraph");
+const button1 = document.querySelector("#colorBtn");
 
-// button.addEventListener("click", function () {
-//   paragraph.style.color = "purple";
-// });
+button1.addEventListener("click", function () {
+  paragraph.style.color = "purple";
+});
 
 // Задание3
-// const heading = document.querySelector("#mainHeading");
-// const button = document.querySelector("#changeTextButton");
+const heading1 = document.querySelector("#mainHeading");
+const button2 = document.querySelector("#changeTextButton");
 
-// button.addEventListener("click", function () {
-//   heading.textContent = "Привет, мир!";
-// });
+button2.addEventListener("click", function () {
+  heading1.textContent = "Привет, мир!";
+});
 
 // Задание4
-// const descriptionElements = document.querySelectorAll(".description");
+const descriptionElements = document.querySelectorAll(".description");
 
-// function changeDescriptionText() {
-//   descriptionElements.forEach((element) => {
-//     element.textContent = "Измененный текст";
-//   });
-// }
+function changeDescriptionText() {
+  descriptionElements.forEach((element) => {
+    element.textContent = "Измененный текст";
+  });
+}
 
-// changeDescriptionText();
+changeDescriptionText();
 
 // Задание5
-// const descElements = document.querySelectorAll(".description");
+const descElements = document.querySelectorAll(".description");
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   descElements.forEach((element) => {
-//     element.textContent = "Новый текст";
-//   });
-// });
+window.addEventListener("DOMContentLoaded", () => {
+  descElements.forEach((element) => {
+    element.textContent = "Новый текст";
+  });
+});
 
 // Задание6
-// const addButton = document.getElementById("addParagraphBtn");
+const addButton = document.getElementById("addParagraphBtn");
 
-// addButton.addEventListener("click", function () {
-//   const newParagraph = document.createElement("p");
+addButton.addEventListener("click", function () {
+  const newParagraph = document.createElement("p");
 
-//   newParagraph.textContent = "Новый абзац";
+  newParagraph.textContent = "Новый абзац";
 
-//   document.body.appendChild(newParagraph);
-// });
+  document.body.appendChild(newParagraph);
+});
 
 // Задание7
 const removeBtn = document.getElementById("removeBtn");
